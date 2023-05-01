@@ -64,10 +64,10 @@ const CountryDetail = () => {
                         {country.borders && (<p><strong>Border Countries: </strong>
                             {country.borders && country.borders.map((border,index) => {
                             if(index+1 < country.borders.length){
-                                return <Link to={`/${findBorderCountries(border)?.name.official}`} state={findBorderCountries(border)}>{findBorderCountries(border)?.name?.common}, </Link>
+                                return <Link to={`/${findBorderCountries(border)?.cca3}`} state={findBorderCountries(border)}>{findBorderCountries(border)?.name?.common}, </Link>
                             }
                             return(
-                            <Link to={`/${findBorderCountries(border)?.name.official}`} state={findBorderCountries(border)}>{findBorderCountries(border)?.name?.common}</Link>
+                            <Link to={`/${findBorderCountries(border)?.cca3}`} state={findBorderCountries(border)}>{findBorderCountries(border)?.name?.common}</Link>
                             )
                         })}</p>)}
                         <div style={{display:"inline"}}>

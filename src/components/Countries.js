@@ -9,14 +9,14 @@ const Countries = () => {
     const navigate = useNavigate();
 
     const handleClick = (country) =>{
-        navigate(`/${country.name.official}`,{state: country});
+        navigate(`/${country.cca3}`,{state: country});
     }
 
     return(
         <>
             {countryData.length > 0 ? countryData.map(country => {
                 return(
-                    <div className="product-row" role="button" onClick={()=>{handleClick(country)}}>
+                    <div className="product-row" role="button" key={country.name.official} onClick={()=>{handleClick(country)}}>
                         <div className="col-sm">
                             <img className="product-flag" src={country.flags.png} alt={`country flag of ${country.name.official}`}/>
                         </div>
