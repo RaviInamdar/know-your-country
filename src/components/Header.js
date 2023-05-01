@@ -58,8 +58,9 @@ const Header = () => {
                         </div>
                         <input type="text" className="form-control" onKeyDown={handleKeyDown} ref={inputRef} placeholder={`Search by ${option}`} />
                         <div className="input-group-append">
-                        <button className="btn btn-success" onClick={handleSearch}>
+                        <button className="btn btn-success" style={{height:"100%"}} onClick={handleSearch}>
                             <i className="fa fa-search"></i>
+                            Search
                         </button>
                         </div>
                         <button className="btn" style={{marginLeft:"15px"}} onClick={handleRandomCountry}>
