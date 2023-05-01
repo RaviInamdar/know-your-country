@@ -8,7 +8,7 @@ const Header = () => {
     const optionRef = useRef(null);
     const inputRef = useRef(null);
     const [option, setOption] = useState("Country Name");
-    const {countryData, setSearchParam, setInput} = useContext(CountryContext);
+    const {originalData, setSearchParam, setInput} = useContext(CountryContext);
     const navigate = useNavigate();
 
     const handleSearchChange = () => {
@@ -30,11 +30,11 @@ const Header = () => {
 
     const handleRandomCountry = () => {
         // find random index number in array
-        const maxLimit = countryData.length -1;
+        const maxLimit = originalData.length -1;
         let rand = Math.random() * maxLimit;
         rand = Math.floor(rand);
         
-        navigate(`${countryData[rand].name.official}`, {state:countryData[rand]});
+        navigate(`${originalData[rand].name.official}`, {state:originalData[rand]});
     }
 
     return (
