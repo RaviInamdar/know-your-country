@@ -1,0 +1,92 @@
+.country-header{
+    background: #282c34;
+    box-shadow:0px 5px 10px lightslategrey;
+    h1{
+        margin-top:0px;
+    }
+}
+.header-items{
+    display:flex;
+}
+.body-items{
+    display:block;
+    height:100%;
+    margin-top:20px;
+}
+.body-main{
+    margin-left:20%;
+    margin-right:20%;
+    background-color:#ececec;
+    display:flex;
+    height:100%;
+    padding-bottom:50px;
+    padding-top:50px;
+    padding-left:20px;
+    padding-right:20px;
+    border-radius:10px;
+}
+
+.header-column{
+    padding-left:25%;
+}
+.country-detail-button{
+    color: white;
+    background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);
+    display:inline-block;
+    border:none;
+    border-radius: 5px;
+    padding:5px;
+    position: relative;
+    margin-top:22px;
+    margin-left:20px;
+    -webkit-transition: all 0.5s;
+}
+.country-detail-home{
+    color: white;
+    border: 1px solid gray;
+    background-color: #282c34;
+    display:inline-block;
+    border-radius: 5px;
+    padding:5px;
+    position: relative;
+    margin-top:22px;
+    margin-left:20px;
+    -webkit-transition: all 0.5s;
+}
+
+.country-detail-view{
+    color: white;
+    border: 1px solid gray;
+    background-color: #282c34;
+    display:inline-block;
+    border-radius: 5px;
+    padding:5px;
+    position: relative;
+    margin:10px;
+    -webkit-transition: all 0.5s;
+}
+
+.country-detail-view:hover{
+    background-color:lightgray;
+    color:black;
+}
+
+.country-detail-button:hover{
+    color:black;
+} 
+.country-detail-home:hover{
+    color:black;
+    background-color:lightgray;
+}
+
+.country-details{
+    margin-left:20px;
+}
+
+html,body{
+    height:100%!important;
+}
+
+li{
+    color:black;
+}
