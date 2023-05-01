@@ -34,7 +34,7 @@ const Header = () => {
         let rand = Math.random() * maxLimit;
         rand = Math.floor(rand);
         
-        navigate(`${originalData[rand].name.official}`, {state:originalData[rand]});
+        navigate(`${originalData[rand].cca3}`, {state:originalData[rand]});
     }
 
     return (
